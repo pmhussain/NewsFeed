@@ -1,0 +1,32 @@
+<form class="" action="" method="post" enctype="multipart/form-data" autocomplete="off">
+{%csrf_token%}
+<div class="row" >
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-6">
+        <div class="card mb-6 shadow-sm">
+          <div class="card-body">
+            <p class="card-text" > {{form.message}} {{form.image}} </p>
+            <input type="submit" name="" value="Upload Post" class = 'btn btn-primary '>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+      </div>
+</div>
+<br>
+</form>
+<script>
+  document.getElementById("id_message").placeholder = "Type Your Message  here..";
+</script>
+</body>
+
+<!-- <script>
+  const sel = document.getElementById("id_person");
+  const opt = document.createElement("option");
+  opt.value = "3";
+  opt.text = "{{request.user}}";
+  sel.add(opt, null);
+  sel.getElementsByTagName('option')[3].selected = 'selected'
+</script> -->

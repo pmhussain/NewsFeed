@@ -1,0 +1,13 @@
+{% extends 'msgfeedApp/home.html' %}
+{% block content %}
+       <form action="" method="post"> {%csrf_token%}
+         <div class="" style="text-align:center">
+           <p><h3>Are you sure you want to delete ??</h3></p>
+           <a href="{%url 'commentpost' comment.comment_id%}"> <button class = 'btn btn-primary ' type="button" name="button">No</button> </a>
+           <!-- <input type="submit" name="confirm" Value = "Yes" > -->
+           <input type="submit" name="confirm" value="Yes" class = 'btn btn-danger '>
+         </div>
+
+       </form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'msgfeedApp/home.html' %}
+{% block content %}
+<form action="" method="post" autocomplete="off"> {%csrf_token%}
+  <div class="" style="text-align:center">
+    <p style="text-align:center"> <h2 style="text-align:center">Edit the comment</h2></p> </p>
+    <p id='comment'> {{form.message}}</p>
+    <a href="{%url 'commentpost' comment.comment_id%}"> <button class = 'btn btn-primary ' type="button" name="button">Cancel</button> </a>
+    <!-- <input type="submit" name="confirm" Value = "Yes" > -->
+    <input type="submit" name="" value="save" class = 'btn btn-primary '>
+  </div>
+
+</form>
+
+{% endblock %}
